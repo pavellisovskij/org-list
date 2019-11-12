@@ -1,0 +1,4 @@
+.tr-link:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.03);
+}
