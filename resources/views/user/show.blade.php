@@ -13,7 +13,7 @@
         <div class="card" style="margin-top: 16px;">
             <div class="card-header">{{ $user->last_name . ' ' . $user->name . ' ' . $user->middle_name }}</div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Дата рождения: {{ $user->birthday }}</li>
+                <li class="list-group-item">Дата рождения: {{ \Carbon\Carbon::parse($user->birthday)->format('d.m.Y') }}</li>
                 <li class="list-group-item">ИНН: {{ $user->inn }}</li>
                 <li class="list-group-item">СНИЛС: {{ $user->snils }}</li>
             </ul>

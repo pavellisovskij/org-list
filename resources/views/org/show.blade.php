@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container">
-        <a href="{{ route('org.index') }}" class="btn btn-primary">К списку организации</a>
 
         @if (session('error'))
             <div class="alert alert-danger">
@@ -15,7 +14,7 @@
             </div>
         @endif
 
-        <div class="card" style="margin-top: 16px; margin-bottom: 16px;">
+        <div class="card" style="margin-bottom: 16px;">
             <div class="card-header">{{ $org->display_name }}</div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ОГРН: {{ $org->ogrn }}</li>
